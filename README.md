@@ -18,3 +18,10 @@ Student # 040904503
 ----------
 
 ## Table of Contents
+1. Introductory Letter
+2. Resume
+3. Documents to support the Course Learning Requirements
+   - Emails
+   - Performance Report
+   - IEGBBR-Overview
+   - IEGBBR-Documentation
