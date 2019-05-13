@@ -292,6 +292,8 @@ When changing the app, a new version number should be used to easily identify th
 1. The main content is housed with the `src/components/data/DetailedInfo.json` file.
     - Any new content being added into the core IEGBBR document (Part 1 through 5) is to be added here, following the *IEGBBR Main Content Data Schema.*
     
+    Example Outlined Below:
+    
     ```javascript
        //src/components/data/DetailedInfo.json
 
