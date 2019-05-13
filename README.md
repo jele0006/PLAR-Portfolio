@@ -18,7 +18,7 @@ Student # 040904503
 ----------
 
 ## Table of Contents
-1. Introductory Letter
+1. [Introductory Letter](https://github.com/jele0006/PLAR-Portfolio/blob/master/IntroLetter.md)
 2. Resume
 3. Documents to support the Course Learning Requirements
    - Emails
