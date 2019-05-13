@@ -1,4 +1,4 @@
-### ENL8720 Technical Communication for Technicians
+# ENL8720 Technical Communication for Technicians
 
 May 13 2019
 
