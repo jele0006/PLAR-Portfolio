@@ -1,7 +1,6 @@
-# PLAR-Portfolio
-Housing Documents for PLAR
-
 # IEGBBR Mobile App Documentation
+
+----------
 
 Last updated: May 13, 2019
 
@@ -335,3 +334,4 @@ When changing the app, a new version number should be used to easily identify th
           }
     ```
 
+----------
