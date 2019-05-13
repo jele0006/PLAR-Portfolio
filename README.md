@@ -17,7 +17,7 @@ We are doing the mobile app version so that we can provide a link to the mobile 
 ----------
 
 ## Application Documentation
-**[Documentation](https://github.com/hc-sc/IEGBBR/blob/development/Documentation.md)**
+**[Documentation](https://github.com/jele0006/PLAR-Portfolio/blob/master/Documentation.md)**
 
 **IEGBBR Compendium of International Biosafety and Biosecurity Oversight Mechanisms**
 
