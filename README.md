@@ -289,8 +289,7 @@ When changing the app, a new version number should be used to easily identify th
     - These sections should have their own file named: `src/components/data/{name}.json` & `src/components/{name}.jsx`
 3. The new section then needs to be added to the `src/components/data/main.json` file
     - This allows the link to render within the application hamburger menu
-    - Add the new section under the `"links": {...` portion of this file.
-    - This is outlined within the *Schema* below:
+    - Add the new section under the `"links": {...` portion of this file. This is outlined within the *Schema* below:
     
     ```javascript
     // src/components/data/main.json
@@ -321,8 +320,7 @@ When changing the app, a new version number should be used to easily identify th
     }
     ```
 4. The new section then needs to be added to `src/components/main.jsx`
-    - Adding the `import {Name} from './{Name}';` Allowing the application to have access to the file.
-    - This is defined and laid out within the *IEGBBR Main.jsx Imports Example* below:
+    - Adding the `import {Name} from './{Name}';` Allowing the application to have access to the file. This is defined and laid out within the *IEGBBR Main.jsx Imports Example* below:
     
     ```jsx
     //src/components/main.jsx
@@ -335,8 +333,7 @@ When changing the app, a new version number should be used to easily identify th
     import {Name} from './{Name}'; // Example of where to add the new import
     ```
     
-    - Adding the `<Route key="{name}" exact path="/:lang/{name}" component={Name} />` Enabling the application to have the ability to navigate to the new section view.
-    - This is defined and laid out within the *IEGBBR Main.jsx Routes Example* below:
+    - Adding the `<Route key="{name}" exact path="/:lang/{name}" component={Name} />` Enabling the application to have the ability to navigate to the new section view. This is defined and laid out within the *IEGBBR Main.jsx Routes Example* below:
     
     ```jsx
     // src/components/main.jsx
