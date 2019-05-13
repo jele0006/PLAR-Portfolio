@@ -1,6 +1,8 @@
-## ENL8720 
-## Technical Communication for Technicians
+## ENL8720 Technical Communication for Technicians
 
+May 13 2019
+
+----------
 
 **Josh Jelen**
 
@@ -12,9 +14,6 @@ Canada
 josh.jelen08@gmail.com
 
 Student # 040904503
-
-May 13 2019
-
 
 ----------
 
