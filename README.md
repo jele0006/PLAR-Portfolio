@@ -268,6 +268,24 @@ When changing the app, a new version number should be used to easily identify th
         </Switch>
        ...
      ```
+3. Update the content within the `src/components/data/Main.json` file under the `"links": {...` portion if the new view is to be accessable via the hamburger menu.
+
+   Example Outlined Below:
+   
+     ```javascript
+          // src/components/data/main.json
+
+        ...
+             "links": {
+               "{name}": "{Name}",  // Example (Order them according to the document structure)
+               "exec": "Executive Summary",
+               "acronyms": "List of Acronyms",
+               "preface": "Preface",
+               "countries": "Country Specific Analysis",
+               "agreements": "Agreements, Conventions, & Initiatives",
+               "terms": "Terms and Conditions"
+              }
+    ```
 
 ### Adding new IEGBBR content
 
@@ -314,41 +332,6 @@ When changing the app, a new version number should be used to easily identify th
               ]
             }
           }
-    ```
-    
-2. New IEGBBR sections are to first be created within the `src/components/data` & `src/components/` directories.
-    - These sections should have their own file named: `src/components/data/{name}.json` & `src/components/{name}.jsx`
-3. The new section then needs to be added to the `src/components/data/main.json` file
-    - This allows the link to render within the application hamburger menu
-    - Add the new section under the `"links": {...` portion of this file. This is outlined within the *Schema* below:
-    
-    ```javascript
-          // src/components/data/main.json
-
-            {
-              "en": {
-
-                "title": "IEGBBR",
-                "browserError": "Problem loading external web page",
-                "noConnection": "No connection",
-                "home": "Home",
-                "language": {
-                  "full": "Français",
-                  "ab": "fr"
-                },
-
-                "links": {
-                  "{name}": "{Name}",  // Example (Order them according to the document structure)
-                  "exec": "Executive Summary",
-                  "acronyms": "List of Acronyms",
-                  "preface": "Preface",
-                  "countries": "Country Specific Analysis",
-                  "agreements": "Agreements, Conventions, & Initiatives",
-                  "terms": "Terms and Conditions"
-                }
-
-              }
-            }
     ```
     
 ### Adding new state property to the application store
