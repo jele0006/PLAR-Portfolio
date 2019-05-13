@@ -243,8 +243,6 @@ When changing the app, a new version number should be used to easily identify th
 1. The main content is housed with the `src/components/data/DetailedInfo.json` file.
     - Any new content being added into the core IEGBBR document (Part 1 through 5) is to be added here, following the *IEGBBR Main Content Data Schema.*
     
-Example for the JSON file outlined below:
-    
     ```javascript
     //src/components/data/DetailedInfo.json
     
@@ -294,65 +292,65 @@ Example for the JSON file outlined below:
     - Add the new section under the `"links": {...` portion of this file. This is outlined within the *Schema* below:
     
     ```javascript
-    // src/components/data/main.json
-    
-    {
-      "en": {
+            // src/components/data/main.json
 
-        "title": "IEGBBR",
-        "browserError": "Problem loading external web page",
-        "noConnection": "No connection",
-        "home": "Home",
-        "language": {
-          "full": "Français",
-          "ab": "fr"
-        },
+            {
+              "en": {
 
-        "links": {
-          "{name}": "{Name}",  // Example (Order them according to the document structure)
-          "exec": "Executive Summary",
-          "acronyms": "List of Acronyms",
-          "preface": "Preface",
-          "countries": "Country Specific Analysis",
-          "agreements": "Agreements, Conventions, & Initiatives",
-          "terms": "Terms and Conditions"
-        }
+                "title": "IEGBBR",
+                "browserError": "Problem loading external web page",
+                "noConnection": "No connection",
+                "home": "Home",
+                "language": {
+                  "full": "Français",
+                  "ab": "fr"
+                },
 
-      }
-    }
+                "links": {
+                  "{name}": "{Name}",  // Example (Order them according to the document structure)
+                  "exec": "Executive Summary",
+                  "acronyms": "List of Acronyms",
+                  "preface": "Preface",
+                  "countries": "Country Specific Analysis",
+                  "agreements": "Agreements, Conventions, & Initiatives",
+                  "terms": "Terms and Conditions"
+                }
+
+              }
+            }
     ```
 4. The new section then needs to be added to `src/components/main.jsx`
     - Adding the `import {Name} from './{Name}';` Allowing the application to have access to the file. This is defined and laid out within the *IEGBBR Main.jsx Imports Example* below:
     
     ```jsx
-    //src/components/main.jsx
-    
-    // App Components (located at the top of the file)
-    import Landing from './Landing';
-    import LanguageSelection from './LanguageSelection';
-    import Components from './Components';
-    import Intro from './Intro';
-    import {Name} from './{Name}'; // Example of where to add the new import
+      //src/components/main.jsx
+
+      // App Components (located at the top of the file)
+      import Landing from './Landing';
+      import LanguageSelection from './LanguageSelection';
+      import Components from './Components';
+      import Intro from './Intro';
+      import {Name} from './{Name}'; // Example of where to add the new import
     ```
     
     - Adding the `<Route key="{name}" exact path="/:lang/{name}" component={Name} />` Enabling the application to have the ability to navigate to the new section view. This is defined and laid out within the *IEGBBR Main.jsx Routes Example* below:
     
     ```jsx
-    // src/components/main.jsx
-    
-    ...
-      <Switch location={this.props.router.location}>
-        <Route key="{name}" exact path="/:lang/{name}" component={Name} /> // Example of adding route
-        <Route key="part1" exact path="/:lang/part1" component={Part1} />
-        <Route key="part2" exact path="/:lang/part2" component={Part2} />
-        <Route key="part3" exact path="/:lang/part3" component={Part3} />
-        <Route key="part4" exact path="/:lang/part4" component={Part4} />
-        <Route key="part5" exact path="/:lang/part5" component={Part5} />
-        <Route key="lang" exact path="/" render={LanguageSelection} />
-        <Route key="home" exact path="/:lang/main" component={Landing} />
+      // src/components/main.jsx
+
+      ...
+        <Switch location={this.props.router.location}>
+          <Route key="{name}" exact path="/:lang/{name}" component={Name} /> // Example of adding route
+          <Route key="part1" exact path="/:lang/part1" component={Part1} />
+          <Route key="part2" exact path="/:lang/part2" component={Part2} />
+          <Route key="part3" exact path="/:lang/part3" component={Part3} />
+          <Route key="part4" exact path="/:lang/part4" component={Part4} />
+          <Route key="part5" exact path="/:lang/part5" component={Part5} />
+          <Route key="lang" exact path="/" render={LanguageSelection} />
+          <Route key="home" exact path="/:lang/main" component={Landing} />
+         ...
+        </Switch>
        ...
-      </Switch>
-     ...
      ```
 
 
