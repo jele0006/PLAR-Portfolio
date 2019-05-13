@@ -235,8 +235,39 @@ When changing the app, a new version number should be used to easily identify th
 
 ### Adding new views
 
-1. Create the component in `src/components`, along with the optional data and test files.
+1. Create the component in `src/components`, along with the optional data and test files `src/components/data`. For example: `src/components/data/{name}.json` & `src/components/{name}.jsx`
 2. Add routing rules for the new view in `src/components/Main.jsx`
+
+   Example Outlined Below:
+   
+   ```jsx
+      //src/components/main.jsx
+
+        // App Components (located at the top of the file)
+        import Landing from './Landing';
+        import LanguageSelection from './LanguageSelection';
+        import Components from './Components';
+        import Intro from './Intro';
+        import {Name} from './{Name}'; // Example of where to add the new import
+    ```
+   
+    ```jsx
+      // src/components/main.jsx
+
+      ...
+        <Switch location={this.props.router.location}>
+          <Route key="{name}" exact path="/:lang/{name}" component={Name} /> // Example of adding route
+          <Route key="part1" exact path="/:lang/part1" component={Part1} />
+          <Route key="part2" exact path="/:lang/part2" component={Part2} />
+          <Route key="part3" exact path="/:lang/part3" component={Part3} />
+          <Route key="part4" exact path="/:lang/part4" component={Part4} />
+          <Route key="part5" exact path="/:lang/part5" component={Part5} />
+          <Route key="lang" exact path="/" render={LanguageSelection} />
+          <Route key="home" exact path="/:lang/main" component={Landing} />
+         ...
+        </Switch>
+       ...
+     ```
 
 ### Adding new IEGBBR content
 
@@ -319,41 +350,7 @@ When changing the app, a new version number should be used to easily identify th
               }
             }
     ```
-4. The new section then needs to be added to `src/components/main.jsx`
-    - Adding the `import {Name} from './{Name}';` Allowing the application to have access to the file. This is defined and laid out within the *IEGBBR Main.jsx Imports Example* below:
     
-    ```jsx
-      //src/components/main.jsx
-
-      // App Components (located at the top of the file)
-      import Landing from './Landing';
-      import LanguageSelection from './LanguageSelection';
-      import Components from './Components';
-      import Intro from './Intro';
-      import {Name} from './{Name}'; // Example of where to add the new import
-    ```
-    
-    - Adding the `<Route key="{name}" exact path="/:lang/{name}" component={Name} />` Enabling the application to have the ability to navigate to the new section view. This is defined and laid out within the *IEGBBR Main.jsx Routes Example* below:
-    
-    ```jsx
-      // src/components/main.jsx
-
-      ...
-        <Switch location={this.props.router.location}>
-          <Route key="{name}" exact path="/:lang/{name}" component={Name} /> // Example of adding route
-          <Route key="part1" exact path="/:lang/part1" component={Part1} />
-          <Route key="part2" exact path="/:lang/part2" component={Part2} />
-          <Route key="part3" exact path="/:lang/part3" component={Part3} />
-          <Route key="part4" exact path="/:lang/part4" component={Part4} />
-          <Route key="part5" exact path="/:lang/part5" component={Part5} />
-          <Route key="lang" exact path="/" render={LanguageSelection} />
-          <Route key="home" exact path="/:lang/main" component={Landing} />
-         ...
-        </Switch>
-       ...
-     ```
-
-
 ### Adding new state property to the application store
 
 1. Add property to initial state constant in `src/data/const.js`
