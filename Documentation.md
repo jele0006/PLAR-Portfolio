@@ -1,5 +1,4 @@
 # IEGBBR Mobile App Documentation
-
 ----------
 
 Last updated: May 13, 2019
