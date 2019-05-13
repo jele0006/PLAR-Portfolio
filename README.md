@@ -3,7 +3,7 @@ Housing Documents for PLAR
 
 # IEGBBR Mobile App Documentation
 
-Last updated: May 03, 2019
+Last updated: May 13, 2019
 
 ## Table of Contents
 
@@ -107,7 +107,7 @@ This application is written primarly using [Javascript XML (JSX)](https://reactj
   - **Main.jsx**
     - Main application container. Renders application body content. Handles routing, transitions and external links. Contains and renders application hamburger menu. 
   - **Landing.jsx**
-    - Landing view. Main page of the IEGBBR app; containing the links to the main content.
+    - Landing view. Main page of the IEGBBR application; containing the links to the main content.
       - **Part1.jsx**
       - Main content Part 1 view; contains the National Biosafety Biosecurity Regulatory Frameworks in the IEGBBR Member Countries content and tables of the IEGBBR document.
       - **Part2.jsx**
