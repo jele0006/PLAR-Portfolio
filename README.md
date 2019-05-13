@@ -244,45 +244,45 @@ When changing the app, a new version number should be used to easily identify th
     - Any new content being added into the core IEGBBR document (Part 1 through 5) is to be added here, following the *IEGBBR Main Content Data Schema.*
     
     ```javascript
-    //src/components/data/DetailedInfo.json
-    
-    {
-      "en": {
-        "countries": [
-            {
-              "index": "0",
-              "name": "Canada",
-              "iso": "CA",
-              "tableOne": [
+       //src/components/data/DetailedInfo.json
+
+        {
+          "en": {
+            "countries": [
                 {
-                  "element": "ul",
-                  "child": [
+                  "index": "0",
+                  "name": "Canada",
+                  "iso": "CA",
+                  "tableOne": [
                     {
-                      "element": "li",
-                      "child": "This is the test content for Canada"
-                    },
-                    {
-                      "element": "li",
-                      "child": "This is the test content for Canada"
+                      "element": "ul",
+                      "child": [
+                        {
+                          "element": "li",
+                          "child": "This is the test content for Canada"
+                        },
+                        {
+                          "element": "li",
+                          "child": "This is the test content for Canada"
+                        }
+                      ]
                     }
-                  ]
-                }
-              ],
-              "tableTwo": [
-                {
-                  "element": "ul",
-                  "child": [
+                  ],
+                  "tableTwo": [
                     {
-                      "element": "li",
-                      "child": "This is the test content for Canada"
+                      "element": "ul",
+                      "child": [
+                        {
+                          "element": "li",
+                          "child": "This is the test content for Canada"
+                        }
+                      ]
                     }
                   ]
                 }
               ]
             }
-          ]
-        }
-      }
+          }
     ```
     
 2. New IEGBBR sections are to first be created within the `src/components/data` & `src/components/` directories.
@@ -292,7 +292,7 @@ When changing the app, a new version number should be used to easily identify th
     - Add the new section under the `"links": {...` portion of this file. This is outlined within the *Schema* below:
     
     ```javascript
-            // src/components/data/main.json
+          // src/components/data/main.json
 
             {
               "en": {
