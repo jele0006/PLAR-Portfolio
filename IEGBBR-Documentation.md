@@ -171,8 +171,6 @@ For more on testing see the testing page in the [MET documentation](https://gith
 
 When a user first opens the application, they are prompted to choose their language.  That value is stored using [Local Storage](https://www.w3schools.com/html/html5_webstorage.asp).
 
-If the user has already selected a language they are immediatly brought to the main options view instead of the language selection view.
-
 At the top level of all component data, the data should be split between English and French, allowing the component to easily access the appropriate text for the selected language.
 
 Example for the JSX and JSON files below:
