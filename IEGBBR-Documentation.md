@@ -194,7 +194,7 @@ class Landing {
 
 {
   "en": {
-    "content": "Detailed Information on National Biosafety and Biosecurity Regulatory Oversight in IEGBBR Member Countries",
+    "title": "Detailed Information on National Biosafety and Biosecurity Regulatory Oversight in IEGBBR Member Countries",
     "links": {
       "part1": "Part 1: National Biosafety Biosecurity Regulatory Landscape in the IEGBBR Member Countries",
       "part2": "Part 2: Processes, Procedures, and Record Management Requirements Related to Biosecurity-Biosafety Oversight",
@@ -204,7 +204,7 @@ class Landing {
     },
 
   "fr": {
-    "content": "Information détaillée sur la surveillance réglementaire de la biosécurité et de la biosûreté à l’échelle nationale dans les pays membres de l’IEGBBR",
+    "title": "Information détaillée sur la surveillance réglementaire de la biosécurité et de la biosûreté à l’échelle nationale dans les pays membres de l’IEGBBR",
     "links": {
       "part1": "Partie 1 : Les cadres nationaux de réglementation de la biosécurité et de la biosûreté dans les pays membres de l’IEGBBR",
       "part2": "Partie 2 : Processus, procédures et exigences en matière de gestion des dossiers dans le cadre de la surveillance de la biosûreté et de la biosécurité",
