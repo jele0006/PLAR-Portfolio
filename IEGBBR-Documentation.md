@@ -252,13 +252,13 @@ When changing the app, a new version number should be used to easily identify th
 
       ...
         <Switch location={this.props.router.location}>
+          <Route key="lang" exact path="/" render={LanguageSelection} />
           <Route key="{name}" exact path="/:lang/{name}" component={Name} /> // Example of adding route
           <Route key="part1" exact path="/:lang/part1" component={Part1} />
           <Route key="part2" exact path="/:lang/part2" component={Part2} />
           <Route key="part3" exact path="/:lang/part3" component={Part3} />
           <Route key="part4" exact path="/:lang/part4" component={Part4} />
           <Route key="part5" exact path="/:lang/part5" component={Part5} />
-          <Route key="lang" exact path="/" render={LanguageSelection} />
           <Route key="home" exact path="/:lang/main" component={Landing} />
          ...
         </Switch>
