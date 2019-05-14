@@ -240,11 +240,11 @@ When changing the app, a new version number should be used to easily identify th
       //src/components/main.jsx
 
         // App Components (located at the top of the file)
+        import Components from './Components';
         import Landing from './Landing';
         import LanguageSelection from './LanguageSelection';
-        import Components from './Components';
-        import Intro from './Intro';
         import {Name} from './{Name}'; // Example of where to add the new import
+        import Part1 from './Part1';
     ```
    
     ```jsx
